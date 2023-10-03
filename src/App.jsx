@@ -50,6 +50,8 @@ const App = () => {
           <Route path="/Scarf" element={<Scarf />} />
           <Route path="/FootballBoots" element={<FootballBoots />} />
           <Route path="/Hijabs" element={<Hijabs />} />
+          <Route path="/Auth" element={<Auth />} />
+
         </Routes>
       </Router>
     </div>
