@@ -22,8 +22,8 @@ import GymWearMen from "./GymWearMen";
 import Scarf from "./Scarf";
 import FootballBoots from "./FootballBoots";
 import Hijabs from "./Hijabs";
+import ProductDetails from "./ProductDetails";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 const App = () => {
   return (
     <div className="container mx-auto px-4 py-8">
@@ -51,7 +51,7 @@ const App = () => {
           <Route path="/FootballBoots" element={<FootballBoots />} />
           <Route path="/Hijabs" element={<Hijabs />} />
           <Route path="/Auth" element={<Auth />} />
-
+          <Route path="/ProductDetails" element={<ProductDetails />} />
         </Routes>
       </Router>
     </div>

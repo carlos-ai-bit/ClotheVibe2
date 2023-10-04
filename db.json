@@ -1,14 +1,19 @@
-[
-    {
-        "email": "ygunston0@illinois.edu",
-        "Password": "qD3.~vpt"
-    },
-    {
-        "email": "zjoselevitch1@economist.com",
-        "Password": "tO6)?q5Xxq"
-    },
-    {
-        "email": "akrystek0@bandcamp.com",
-        "Password": "pH7=HVpA&"
-    }
-]
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Product 1",
+            "price": 10.99
+        },
+        {
+            "id": 2,
+            "name": "Product 2",
+            "price": 19.99
+        },
+        {
+            "id": 3,
+            "name": "Product 3",
+            "price": 14.99
+        }
+    ]
+}
