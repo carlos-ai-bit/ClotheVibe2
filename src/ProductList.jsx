@@ -170,6 +170,26 @@ const ProductList = () => {
   function navigateHijabs() {
     navigate("/Hijabs ");
   }
+  const [showAbout, setShowAbout] = useState(false);
+  const [showContact, setShowContact] = useState(false);
+  const [showPrivacy, setShowPrivacy] = useState(false);
+  const [showTerms, setShowTerms] = useState(false);
+
+  const handleAboutClick = () => {
+    setShowAbout(!showAbout);
+  };
+
+  const handleContactClick = () => {
+    setShowContact(!showContact);
+  };
+
+  const handlePrivacyClick = () => {
+    setShowPrivacy(!showPrivacy);
+  };
+
+  const handleTermsClick = () => {
+    setShowTerms(!showTerms);
+  };
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="absolute top-0 right-0 mt-9 mr-6">
@@ -276,6 +296,65 @@ const ProductList = () => {
           ))}
         </ul>
       )}
+      <div className="mt-9">
+        <div className="">
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-2"
+            onClick={handleAboutClick}
+          >
+            About Us
+          </button>
+          {showAbout && (
+            <div className="mt-4 p-4 border border-gray-300 rounded">
+              <h2 className="text-lg font-bold mb-2 ">About Us</h2>
+              <p>
+                Welcome to our Clothes App! We are a fashion-forward mobile
+                application designed to provide an exceptional shopping
+                experience for clothing enthusiasts. Our app offers a wide range
+                of trendy and high-quality clothing items for all ages and
+                genders. With a user-friendly interface and convenient features,
+                we aim to make your shopping journey seamless and enjoyable.
+              </p>
+            </div>
+          )}
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 mx-2"
+            onClick={handleContactClick}
+          >
+            Contact Us
+          </button>
+          {showContact && (
+            <div className="mt-4 p-4 border border-gray-300 rounded">
+              <h2 className="text-lg font-bold mb-2">Contact Us</h2>
+              <p></p>
+            </div>
+          )}
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 mx-2"
+            onClick={handlePrivacyClick}
+          >
+            Privacy Policy
+          </button>
+          {showPrivacy && (
+            <div className="mt-4 p-4 border border-gray-300 rounded">
+              <h2 className="text-lg font-bold mb-2">Privacy Policy</h2>
+              <p></p>
+            </div>
+          )}
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 mx-2"
+            onClick={handleTermsClick}
+          >
+            Terms of Service
+          </button>
+          {showTerms && (
+            <div className="mt-4 p-4 border border-gray-300 rounded">
+              <h2 className="text-lg font-bold mb-2">Terms of Service</h2>
+              <p></p>
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 };
